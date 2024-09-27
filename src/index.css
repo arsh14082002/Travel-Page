@@ -1,0 +1,46 @@
+@tailwind base;
+
+@layer base {
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.s-container {
+  @apply lg:pl-[150px] pl-[20px] lg:pr-[150px] pr-[20px];
+}
+
+.secondary-heading {
+  @apply text-headingColor leading-10 text-3xl font-bold;
+}
+
+.secondary-content {
+  @apply text-fontColor leading-8 tracking-wider text-base;
+}
+
+.icons-content-style {
+  @apply text-headingColor leading-10 text-xl font-semibold;
+}
+
+.primary-heading {
+  @apply text-white text-center font-bold text-3xl;
+}
+
+.primary-heading-text {
+  @apply text-white text-center  text-base;
+}

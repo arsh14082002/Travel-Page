@@ -1,0 +1,20 @@
+.parallax-container {
+  position: relative;
+  height: 300px; /* Full height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.parallax-background {
+  background-image: url('../../assets/home-parallax.jpg'); /* Path to your image */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-attachment: fixed; /* Fixed background for parallax effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Cover the entire container */
+  z-index: 1; /* Ensure it's behind the content */
+}

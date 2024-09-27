@@ -1,0 +1,26 @@
+.slider1 .slick-dots {
+  display: none !important;
+}
+
+.slick-dots {
+  bottom: 30px !important; /* Adjust if necessary */
+  text-align: center;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+  position: relative;
+}
+
+.slick-dots li button:before {
+  content: '•'; /* Use bullet point for dots */
+  font-size: 12px; /* Default size for inactive dots */
+  color: gray; /* Default color for dots */
+  transition: all 0.3s ease; /* Transition for smooth animation */
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 16px; /* Size for active dot */
+  color: red; /* Color for active dot */
+  transform: scale(1.2); /* Enlarge the active dot */
+}
